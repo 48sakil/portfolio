@@ -1,0 +1,63 @@
+@media (max-width: 768px) {
+    .main_menu .navbar-brand img{
+        transform: skew(1deg) !important;
+    }
+    .main_menu .navbar-brand {
+        width: 135px !important;
+        height: 51px !important;
+        text-align: center;
+        line-height:0;
+        background: violet !important;
+        transform: skew(-35deg);
+    }
+    .main_menu ul li a {
+        background: rgb(19, 113, 5);
+        text-align: center;
+    }
+    .main_menu ul li a:hover {
+        background: white !important;
+        color: black;
+    }
+    /* banner part */
+    .banner_item {
+        padding: 80px 0 100px !important;
+    }
+    .banner_item .banner_text h2 {
+        font-size: 22px !important;
+    }
+    .banner_item .banner_text h1 {
+        font-size: 34px !important;
+
+    }
+    /* about part */
+    .about_text p{
+        text-align: justify;
+    }
+    /* service part */
+    .card-text p{
+        font-size: 8px !important;
+    }
+    .service_text {
+        margin-bottom: 10px;
+    }
+    /* gellery part */
+    .gell_img:nth-child(2){
+        margin-bottom: 20px;
+    }
+    /* counter part */
+    .text_count {
+        font-size: 12px !important;
+    }
+    /* progress bar */
+    .rg_form{
+        margin-bottom: 20px;
+    }
+    .barChart {
+        --bs-gutter-x: 5rem !important;
+        --bs-gutter-y: 0;
+    }
+    /* footer========== */
+    .flick_photo ul li{
+        width:30.7% !important;
+    }
+  }

@@ -1,0 +1,26 @@
+    <div class="skill">
+        <div class="single-progressbar">
+            <h4 class="title">HTML</h4>
+            <div class="html"></div>
+        </div>
+        <div class="single-progressbar">
+            <h4 class="title">CSS</h4>
+            <div class="css"></div>
+        </div>
+        <div class="single-progressbar">
+            <h4 class="title">PHP</h4>
+            <div class="php"></div>
+        </div>
+        <div class="single-progressbar">
+            <h4 class="title">Javascript</h4>
+            <div class="javascript"></div>
+        </div>
+        <div class="single-progressbar">
+            <h4 class="title">Jquery</h4>
+            <div class="jquery"></div>
+        </div>
+        <div class="single-progressbar">
+            <h4 class="title">Python</h4>
+            <div class="python"></div>
+        </div>
+    </div>

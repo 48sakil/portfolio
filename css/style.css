@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+    padding: 0;
+    margin: 0;
+}
+/* ==============================================================
+                        common css end
+================================================================= */
+/* ==============================================================
+                        menu part start
+================================================================= */
+
+.main_menu {
+    height: 50px;
+    background: rgba(53, 53, 53, 0.25);
+    position: fixed;
+    left: 0;
+    top: 10px;
+    width: 100%;
+    z-index: 999;
+}
+.main_menu .navbar-brand{
+
+    width: 200px;
+    height: 70px;
+    text-align: center;
+    line-height: -20px;
+    background: rgba(0, 152, 140, 0.6);
+    transform: skew(-10deg);
+}
+.main_menu{
+    height: 50px;
+    background: rgba(4, 190, 203, 0.703);
+    padding: 0;
+    line-height: 50px;
+}
+.main_menu ul li a{
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 33px;
+    color:antiquewhite;
+    text-transform: uppercase;
+    padding:10px 12px !important;
+    position: relative;
+    z-index:1;
+    
+}
+.main_menu ul li a:hover{
+    background: white;
+    color:black
+}
+.main_menu ul li a::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width:0;
+    height: 3px;
+    background: rgb(255, 85, 0);
+    transition: all linear .3s;
+
+}
+.main_menu ul li a:hover::after{
+    width:100%;
+
+}
+/* ==============================================================
+                        menu part  end
+================================================================= */
+/* ==============================================================
+                        banner part start
+================================================================= */
+.banner_item{
+    padding:150px 0 190px;
+    position: relative;
+}
+.banner_item .banner_text{
+    text-align: center;
+}
+.banner_item .banner_text h2{
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;    
+}
+.banner_item .banner_text h1{
+    font-size: 52px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform:skew(-20deg) ;
+}
+#banner .slick-dots li button{
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    background: rgb(253, 6, 6);
+    border-radius: 50%;
+    border: 1px solid teal;
+    margin: 0 5px;
+}
+#banner .slick-dots{
+    display: flex;
+    position: absolute;
+    left:50%;
+    bottom: 30px;
+    transform: translatex(-50%);  
+}
+#banner .slick-dots li.slick-active button{
+    width: 18px;
+    height: 18px;
+    background: rgb(93, 64, 224);
+}
+.banner_item{
+    position: relative;
+}
+.banner_item::after{
+    position: absolute;
+    content:'';
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.416);
+}
+/* ==============================================================
+                        banner part  end
+================================================================= */
+/* ==============================================================
+                        about part start
+================================================================= */
+#about{
+    padding:20px 0;
+}
+.about_text h2{
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.about_text p span{
+    display: block;
+    padding-top: 10px;
+
+}
+/* ==============================================================
+                        service part  end
+================================================================= */
+#service{
+    padding: 20px 0;
+}
+.service_text{
+    padding: 20px;
+    border: 5px solid #5b5b5b;
+    transition: all linear .3s;
+}
+.service_text:hover{
+    box-shadow: 0 10px 10px 0 rgba(246, 92, 92, 0.441);
+}
+.service_text h2{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.service_text a{
+    font-size: 18px;
+    text-align: center;
+    text-transform: capitalize;
+}
+/* ==============================================================
+                        service part start
+================================================================= */
+/* ==============================================================
+                        gellery part  start
+================================================================= */
+#gellery{
+    padding: 20px 0;
+}
+.header_gellery{
+    padding-bottom: 30px;
+}
+.gell_img{
+    position:relative;
+}
+.gell_img:hover .overly{
+    background: rgba(255, 0, 21, 0.4);
+    border: 5px dashed #ddd;
+}
+.gell_img .overly{
+    position: absolute ;
+    content: '';
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    transition: all linear .3s;
+
+}
+.gell_img .overly i{
+    position: absolute;
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+    left: 50%;
+    top: 50%;
+    transform: scale(0);
+}
+.gell_img:hover .overly I{
+    transform: scale(1);
+}
+/* ==============================================================
+                        gellery part end
+================================================================= */
+/* ==============================================================
+                        testimonial part start
+================================================================= */
+#testimonial{
+    padding:20px 0;
+}
+.test_icon a{
+    padding: 5px 5px;
+    border: 1px solid red;
+    font-size: 10px;
+}
+.test_icon a:hover{
+    background: #ff0202;
+    color:blue;
+    border:#fff;
+}
+/* ==============================================================
+                         testimonial part  end
+================================================================= */
+/* ==============================================================
+                        counter part start
+================================================================= */
+/* ==============================================================
+                        counter part  end
+================================================================= */
+.counter_bg{
+    padding:50px 0;
+}
+.text_count{
+    font-size: 22px;
+}
+/* ==============================================================
+                        counter part start
+================================================================= */
+/* ==============================================================
+                       register part  end
+================================================================= */
+#register{
+    background: blue;
+    padding:20px 0;
+}
+.rg_form{
+    text-transform: capitalize;
+    color:#FFF;
+    background: blue;
+    border-radius: 10px;
+}
+.barChart h3{
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.barChart p{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.barChart h2{
+    text-transform: capitalize;
+}
+.barChart{
+    color:#fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: justify;
+}
+/* ==============================================================
+                        register part start
+================================================================= */
+/* ==============================================================
+                        team part start
+================================================================= */
+/* ==============================================================
+                        team part  end
+================================================================= */
+#team{
+    background: black;
+    padding:20px
+}
+.team_member h2{
+    margin-top: 20px;
+    text-transform: capitalize;
+    
+}
+.team_member h6{
+    text-transform: capitalize;
+
+}
+.team_member p{
+    text-transform: capitalize;
+}
+.team_member{
+    transition: all linear .3s;
+    line-height: 20px;
+}
+.team_member:hover {
+    border: 5px solid #ddd;
+    box-shadow: 10px 10px 5px 5px rgba(246, 92, 92, 0.441);
+    border-radius: 10px;
+}
+.team_img{
+    position: relative;
+}
+.team_img .overly2{
+    position: absolute;
+    content: '';
+    right:0;
+    top:0;
+    width: 100px;
+    height: 100%;
+    background: #ff020272;
+    z-index: 999;
+    text-align: center;
+
+ }
+ .team_img .overly2 ul{
+    top:-80%;
+    transform: translateY(100%);
+    text-align: center;
+
+ }
+ .team_img .overly2 ul a{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    line-height: 30px;
+    margin-top: 5px;
+}
+.team_img .overly2 ul li:hover a {
+    background: #fff;
+    color:#ff0202
+}
+/* ==============================================================
+                        team part start
+================================================================= */
+/* ==============================================================
+                       footer part star
+================================================================= */
+#footer{
+    padding:100px 0 20px;
+    background: dimgray;
+}
+.footer_first img{
+    padding: 20px;
+    background:#fff ;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.footer_first p {
+    color:#fff;
+    z-index: 999;
+    font-size: 18px;
+}
+.footer_first p span{
+    color:white;
+    font-weight: 500;
+    display: block;
+    margin-top: 15px;
+}
+.contact{
+    margin-top: 20px;
+}
+.contact_icon{
+    margin-right: 10px;
+}
+.contact_icon i{
+    padding: 5px;
+    background-color: aliceblue;
+    color:blue;
+    border:2px solid red;
+}
+.contact_text a{
+    color:white;
+    font-size: 18px;
+}
+
+.Copyright p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: var(--sans);
+    padding-top: 40px;
+    position: relative;
+}
+
+.Copyright p a {
+    color: red;
+}
+
+.Copyright p::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 25px;
+    background: #ff1212;
+}
+.bt_top{
+    width: 40px;
+    height: 40px;
+    background: red;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.bt_top{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 999;
+    display: none;
+}
+
+/* ==============================================================
+                       footer part end
+================================================================= */
+
